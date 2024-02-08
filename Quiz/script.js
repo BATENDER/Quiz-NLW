@@ -113,6 +113,7 @@ const perguntas = [
 
 // Nesse bloco o javascript foi capaz de pegar esse id e essa tag
 const quiz = document.querySelector('#quiz');
+const quizEstado = document.querySelector('.quiz-item');
 const template = document.querySelector('template');
 const mostrarTotal = document.querySelector('#acertos span');
 
