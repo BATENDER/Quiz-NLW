@@ -114,6 +114,12 @@ const perguntas = [
 // Nesse bloco o javascript foi capaz de pegar esse id e essa tag
 const quiz = document.querySelector('#quiz');
 const template = document.querySelector('template');
+const mostrarTotal = document.querySelector('#acertos span');
+
+const correta = new Set();
+const totalDePerguntas = perguntas.length;
+
+mostrarTotal.textContent = `${correta.size} de ${totalDePerguntas}`;
 
 // Esse for foi utilizado para percorrer todo o array "perguntas" pegando os elementos essenciais para construir e mostrar o quiz;
 for (let item of perguntas) {
@@ -126,7 +132,21 @@ for (let item of perguntas) {
     for (let respostas of item.resposta) {
         let dt = quizItem.querySelector('dl dt').cloneNode(true);
         dt.querySelector('span').textContent = respostas;
+        dt.querySelector('input').setAttribute('name', `pergunta-${perguntas.indexOf(item)}`);
+        dt.querySelector('input').value = item.resposta.indexOf(respostas);
+        
+        // fazer uma versão dessa função porém usando um addEventListener e fazer com que ao invés de ir marcando enquanto vai acertando, fazer aparecer a resposta no final
+        dt.querySelector('input').onchange = (event) => {
+            let respostaCorreta = event.target.value == item.correto; // dois == pois está fazendo uma comparação ntre número e String, pois == não avalia o tipo, já o === sim
 
+            correta.delete(item);
+            if (respostaCorreta) {
+                correta.add(item);
+            }
+
+            mostrarTotal.textContent = `${correta.size} de ${totalDePerguntas}`;
+        }
+        
         quizItem.querySelector('dl').appendChild(dt);
     }
     
