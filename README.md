@@ -3,9 +3,9 @@
 --- 
 
 ## 1. Descrição 🎯
-> O projeto teve como propósito testar minhas habilidades em programação criando um quiz interativo que apresenta algumas perguntas específicas sobre diversos assuntos e marca em tempo real os acertos dos participantes. Esse quiz serve para qualquer um que precise testar seus conhecimentos sobre um conteúdo específico.
+> O projeto teve como propósito testar minhas habilidades em programação criando um quiz interativo que apresenta algumas perguntas específicas sobre diversos assuntos e marca em tempo real os acertos dos participantes. Esse quiz serve para qualquer um que precise testar seus conhecimentos sobre um conteúdo específico.  
 
-#
+<br>
 
 ## 2. Tecnologias 💻
 
@@ -15,15 +15,15 @@
 * CSS
     * Utilizado para estilização do projeto
 * JavaScript
-    * Utilizado para lógica, inteligência, interatividade e funcionalidade do projeto
+    * Utilizado para lógica, inteligência, interatividade e funcionalidade do projeto  
 
-#
+<br>
 
 ## 3. Funcionalidades 🧩
 
-> O conteúdo de cada pergunta foi elaborada com a ajuda do chat GPT (Link para acessar a IA: [Chat GPT](https://chat.openai.com/)), ou seja, existe uma possibilidade praticamente infinita de informações que podem ser extraídas e usadas como conhecimentos gerais. O quiz foi elaborado de forma que apenas uma das respostas é correta e a validação de cada resposta depende se a opção marcada está correta ou não e o feedback e nota são dados automaticamente após a resposta de cada pergunta, não contabilizando quando a resposta estiver incorreta.
+> O conteúdo de cada pergunta foi elaborada com a ajuda do chat GPT (Link para acessar a IA: [Chat GPT](https://chat.openai.com/)), ou seja, existe uma possibilidade praticamente infinita de informações que podem ser extraídas e usadas como conhecimentos gerais. O quiz foi elaborado de forma que apenas uma das respostas é correta e a validação de cada resposta depende se a opção marcada está correta ou não e o feedback e nota são dados automaticamente após a resposta de cada pergunta, não contabilizando quando a resposta estiver incorreta.  
 
-#
+<br>
 
 ## 4. Estrutura do Projeto 📂
 
@@ -60,9 +60,10 @@
  ``` correta.delete(item);
     if (respostaCorreta) {
         correta.add(item);
-    }
+    }  ```
+ ```
 
-#
+<br>
 
 ## 5. Design e Estilo 🎨
 
@@ -84,33 +85,34 @@ Presente na estrutura:
         correta: 1;
     },
     ...
- ]
+ ]  ```
+```
 
-#
+<br>
 
 ## 6. Responsividade 📱
 
-> A forma como o **QUIZ** foi elaborado, já possui uma grande facilidade de se adaptar aos diversos dispositivos, sendo eles móveis ou não
+> A forma como o **QUIZ** foi elaborado, já possui uma grande facilidade de se adaptar aos diversos dispositivos, sendo eles móveis ou não  
 
-#
+<br>
 
-## 7. Testes e Validação 
+## 7. Testes e Validação ✔️
 
-> Foram feitos diversos testes em relação a funcionalidade da lógica em **JavaScript** e em relação a alguns atributos em **CSS**
+> Foram feitos diversos testes em relação a funcionalidade da lógica em **JavaScript** e em relação a alguns atributos em **CSS**  
 
-#
+<br>
 
 ## 8. Desafios e Soluções 💡
 
-> Os maiores desafios foi em relação a pegar todas as informações contidas na variável de `conteudo` para ser utilizado no código utilizando o `<template>` no arquivo de **HTML**. O que foi apresentado uma solução que aumenta muito a produtividade e reduz a quantidade de linhas de códigos necessários para fazer as perguntas (que já foram várias 😅)
+> Os maiores desafios foi em relação a pegar todas as informações contidas na variável de `conteudo` para ser utilizado no código utilizando o `<template>` no arquivo de **HTML**. O que foi apresentado uma solução que aumenta muito a produtividade e reduz a quantidade de linhas de códigos necessários para fazer as perguntas (que já foram várias 😅)  
 
-#
+<br>
 
 ## 9. Aprendizados 📚
 
-> Aprendi muita coisa em relação ao **JavaScript**, pricipalmente para reduzir a quantidade de código necessária para realizar certas ações e com toda certeza irei utilizar esses meus conhecimentos em projetos futuros
+> Aprendi muita coisa em relação ao **JavaScript**, pricipalmente para reduzir a quantidade de código necessária para realizar certas ações e com toda certeza irei utilizar esses meus conhecimentos em projetos futuros  
 
-#
+<br>
 
 ## 10. Melhorias Futuras
 
@@ -118,10 +120,11 @@ Presente na estrutura:
 
 ***
 #
+<br>
 
-Saiba que eu sou:
+Saiba quem eu sou:
 
 
 [BATENDER](https://github.com/BATENDER) |
 --- |
-[Logo do meu perfil]() |
+![Logo do meu perfil](https://github.com/BATENDER/Quiz-NLW/assets/65036435/1809a2ea-4ad2-46c2-b650-bdac56c217bf) |
